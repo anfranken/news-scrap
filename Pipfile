@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+# Web scraping
+# ------------------------------------------------------------------------------
+news-please = "*"
+
+[dev-packages]
+# Code quality
+# ------------------------------------------------------------------------------
+black = "==19.10b0" # pin until black leaves pre-release status
+isort = "*"
+pylint = "*"
+# Testing
+# ------------------------------------------------------------------------------
+pytest = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.6"
