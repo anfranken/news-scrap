@@ -1,0 +1,31 @@
+{
+  "base_urls" : [
+    {
+      "url": "https://www.spiegel.de/nachrichtenarchiv/",
+      "crawler": "RecursiveCrawler",
+
+      # TODO
+      "overwrite_heuristics": {"is_not_from_subdomain": true},
+
+      # TODO
+      # do not crawl datenschutzerklaerung, help page, specific news sections etc:
+      # - spiegel.de/anb
+      # - spiegel.de/agb
+      # - spiegel.de/auto/*
+      # - spiegel.de/dienste/*
+      # - spiegel.de/extra/*
+      # - spiegel.de/forum/*
+      # - spiegel.de/impressum
+      # - spiegel.de/international/*
+      # - spiegel.de/hilfe
+      # - spiegel.de/karriere/*
+      # - spiegel.de/kontakt
+      # - spiegel.de/netzwelt/*
+      # - spiegel.de/reise/*
+      # - spiegel.de/sport/*
+      # - spiegel.de/stil/*
+      # - spiegel.de/video/*
+      "ignore_regex" : ".*((\/auto\/)|(\/dienste\/)|(\/extra\/)|(\/forum\/)|(\/impressum)|(\/international\/)|(\/karriere\/)|(\/netzwelt\/)|(\/reise\/)|(\/sport\/)|(\/stil\/)|(\/video\/)).*",
+    }
+  ]
+}
