@@ -33,3 +33,22 @@ usage: news-please [-h] [-c CFG_FILE_PATH] [-resume] [-reset-elasticsearch]
 
 A generic news crawler and extractor.
 ```
+
+### Optional
+
+Follow the installation instructions for Docker and Docker-Compose:
+
+- <https://docs.docker.com/install/>
+- <https://docs.docker.com/compose/install/>
+
+To verify the installation was successful, you can type:
+
+```bash
+$ docker version
+$ docker-compose version
+```
+
+You can start a MongoDB service with:
+```bash
+$ docker-compose up
+```
