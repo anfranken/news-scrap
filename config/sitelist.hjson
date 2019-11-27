@@ -4,28 +4,32 @@
       "url": "https://www.spiegel.de/nachrichtenarchiv/",
       "crawler": "RecursiveCrawler",
 
-      # TODO
-      "overwrite_heuristics": {"is_not_from_subdomain": true},
+      # do not crawl subdomains, e.g. "magazin.spiegel.de"
+      "overwrite_heuristics": {"is_not_from_subdomain": true, "linked_headlines": false, "self_linked_headlines": false},
 
       # TODO
-      # do not crawl datenschutzerklaerung, help page, specific news sections etc:
+      # do not crawl specific pages
       # - spiegel.de/anb
       # - spiegel.de/agb
+      # - spiegel.de/impressum
+      # - spiegel.de/hilfe
+      # - spiegel.de/kontakt
+
+      # do not crawl specific sections
       # - spiegel.de/auto/*
       # - spiegel.de/dienste/*
       # - spiegel.de/extra/*
       # - spiegel.de/forum/*
-      # - spiegel.de/impressum
+      # - spiegel.de/fotostrecke/*
       # - spiegel.de/international/*
-      # - spiegel.de/hilfe
       # - spiegel.de/karriere/*
-      # - spiegel.de/kontakt
+      # - spiegel.de/meinspiegel/*
       # - spiegel.de/netzwelt/*
       # - spiegel.de/reise/*
       # - spiegel.de/sport/*
       # - spiegel.de/stil/*
       # - spiegel.de/video/*
-      "ignore_regex" : ".*((\/auto\/)|(\/dienste\/)|(\/extra\/)|(\/forum\/)|(\/impressum)|(\/international\/)|(\/karriere\/)|(\/netzwelt\/)|(\/reise\/)|(\/sport\/)|(\/stil\/)|(\/video\/)).*",
+      "ignore_regex" : ".*((\/auto\/)|(\/dienste\/)|(\/extra\/)|(\/forum\/)|(\/fotostrecke\/)|(\/impressum)|(\/international\/)|(\/karriere\/)|(\/kontakt)|(\/netzwelt\/)|(\/reise\/)|(\/sport\/)|(\/stil\/)|(\/video\/)).*",
     }
   ]
 }
