@@ -33,3 +33,11 @@ usage: news-please [-h] [-c CFG_FILE_PATH] [-resume] [-reset-elasticsearch]
 
 A generic news crawler and extractor.
 ```
+
+### Run crawler
+
+If you are in the repository's directory, you can start news-please's crawler with:
+
+```bash
+$ (news-scrap) news-please -c config/
+```
